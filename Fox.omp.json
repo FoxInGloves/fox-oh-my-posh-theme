@@ -1,0 +1,76 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "version": 2,
+  "final_space": true,
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "session",
+          "style": "plain",
+          "foreground": "#FFBD00",
+          "template": " {{ .UserName }}'s "
+        },
+        {
+          "type": "path",
+          "style": "plain",
+          "foreground": "#108799",
+          "template": "<#ffffff>in</> {{ .Path }} ",
+          "properties": {
+            "folder_icon": "\uf115 ",
+            "folder_separator_icon": "\uf460 ",
+            "max_depth": 1,
+            "style": "agnoster_short"
+          }
+        },
+        {
+          "type": "git",
+          "style": "plain",
+          "foreground": "#F62F2E",
+          "template": "<#ffffff>on</> {{ .HEAD }}{{ .BranchStatus }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }} ",
+          "properties": {
+            "fetch_status": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "right",
+      "segments": [
+        {
+          "type": "dotnet",
+          "style": "diamond",
+          "foreground": "#1E90FF",
+          "template": " \ue77f {{ .Full }} "
+        },
+        {
+          "type": "executiontime",
+          "style": "diamond",
+          "foreground": "#ffffff",
+          "leading_diamond": "\u250b",
+          "template": " {{ .FormattedMs }} ",
+          "properties": {
+            "style": "roundrock",
+            "threshold": 0
+          }
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#f1f1f1",
+          "template": "\u2b9e "
+        }
+      ]
+    }
+  ]
+}
