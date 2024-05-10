@@ -16,7 +16,7 @@
         {
           "type": "path",
           "style": "plain",
-          "foreground": "#108799",
+          "foreground": "#6495ED",
           "template": "<#ffffff>in</> {{ .Path }} ",
           "properties": {
             "folder_icon": "\uf115 ",
@@ -29,7 +29,7 @@
           "type": "git",
           "style": "plain",
           "foreground": "#F62F2E",
-          "template": "<#ffffff>on</> {{ .HEAD }}{{ .BranchStatus }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }} ",
+          "template": "<#ffffff>on</> {{ .UpstreamIcon }}{{ .HEAD }}{{ .BranchStatus }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }} ",
           "properties": {
             "fetch_status": true
           }
@@ -47,13 +47,19 @@
           "template": " \ue77f {{ .Full }} "
         },
         {
+          "type": "java",
+          "style": "diamond",
+          "foreground": "#FF4500",
+          "template": " \ue738 {{ .Full }}"
+        },
+        {
           "type": "executiontime",
           "style": "diamond",
           "foreground": "#ffffff",
           "leading_diamond": "\u250b",
           "template": " {{ .FormattedMs }} ",
           "properties": {
-            "style": "roundrock",
+            "style": "austin",
             "threshold": 0
           }
         }
