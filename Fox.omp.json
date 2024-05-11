@@ -41,6 +41,12 @@
       "alignment": "right",
       "segments": [
         {
+          "type": "docker",
+          "style": "diamond",
+          "foreground": "#000000",
+          "template": " \uf308 {{ .Context }} "
+        },
+        {
           "type": "dotnet",
           "style": "diamond",
           "foreground": "#1E90FF",
