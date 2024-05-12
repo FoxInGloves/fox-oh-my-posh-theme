@@ -26,6 +26,15 @@
           }
         },
         {
+          "type": "status",
+          "style": "diamond",
+          "foreground": "#FF033E",
+          "template": "{{ if eq .Code 0 }}{{ else }}({{ reason .Code }} code {{ .Code }}) {{ end }}",
+          "properties": {
+            "always_enabled": true
+          }
+        },
+        {
           "type": "git",
           "style": "plain",
           "foreground": "#F62F2E",
