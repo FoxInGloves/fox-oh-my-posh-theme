@@ -52,7 +52,7 @@
         {
           "type": "docker",
           "style": "diamond",
-          "foreground": "#000000",
+          "foreground": "#1E90FF",
           "template": " \uf308 {{ .Context }} "
         },
         {
