@@ -71,7 +71,7 @@
           "type": "executiontime",
           "style": "diamond",
           "foreground": "#ffffff",
-          "leading_diamond": "\u250b",
+          "leading_diamond": "\u23fd",
           "template": " {{ .FormattedMs }} ",
           "properties": {
             "style": "austin",
