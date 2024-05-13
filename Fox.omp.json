@@ -37,7 +37,7 @@
         {
           "type": "git",
           "style": "plain",
-          "foreground": "#F62F2E",
+          "foreground": "#FF0070",
           "template": "<#ffffff>on</> {{ .UpstreamIcon }}{{ .HEAD }}{{ .BranchStatus }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }} ",
           "properties": {
             "fetch_status": true
