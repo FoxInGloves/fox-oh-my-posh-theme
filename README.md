@@ -13,7 +13,7 @@
 - Set a theme for your terminal.
   For example, for powershell, edit your profile script ($PROFILE notepad) and add this:
 ```powershell
-oh-my-posh init pwsh --config 'C:\Users\FoxInGloves\AppData\Local\Programs\oh-my-posh\themes\Fox.omp.json' | Invoke-Expression
+oh-my-posh init pwsh --config 'C:\Users\User\AppData\Local\Programs\oh-my-posh\themes\Fox.omp.json' | Invoke-Expression
 ```
 To set a different theme, you need to change the name and configuration path.
 
